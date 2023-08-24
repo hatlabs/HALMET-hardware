@@ -60,12 +60,12 @@ Then select SMT Assembly.
 
 Accept the terms and Confirm.
 
-Add BOM File: upload `assembly/SH-ESP32_bom_jlc.csv`
-Add CPL File: upload `assembly/SH-ESP32_cpl_jlc.csv`
+Add BOM File: upload `assembly/HALMET_bom_jlc.csv`
+Add CPL File: upload `assembly/HALMET_cpl_jlc.csv`
 
 Select Next.
 
-Verify the parts. For SH-ESP32, there should be only 1 part (the JST SH connector) not selected.
+Verify the parts. For HALMET, there should be only 1 part (the JST SH connector) not selected.
 Go through the listing and check that the part type and footprint of uploaded BOM data match the matched part detail. 
 This is boring but important!
 If any of the parts are out of stock, find a replacement on [https://jlcpcb.com/parts](https://jlcpcb.com/parts) and update the schema and the layout and create fabrication files.
@@ -80,7 +80,7 @@ The viewer doesn't always work.
 If that happens, go back and click the next button again until you see the components.
 Go through the layout carefully.
 
-If any of the components are misaligned, check the footprint name in `assembly/SH-ESP32_cpl_jlc.csv`.
+If any of the components are misaligned, check the footprint name in `assembly/HALMET_cpl_jlc.csv`.
 Then modify the CPL DB (`cpl_rotations_db.csv`).
 Add the footprint regex at the top of the file (but under the header line, of course) with the required rotation adjustment. 
 Note that if the footprint matches an existing regex, the new regex should be more specific than the old one, and the rotation adjustment should be in relation to the old one. Note that positive degrees are to the counterclockwise.

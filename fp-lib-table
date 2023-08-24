@@ -1,3 +1,4 @@
 (fp_lib_table
-  (lib (name SH-ESP32)(type KiCad)(uri ${KIPRJMOD}/SH-ESP32.pretty)(options "")(descr ""))
+  (version 7)
+  (lib (name "HALMET")(type "KiCad")(uri "${KIPRJMOD}/HALMET.pretty")(options "")(descr ""))
 )

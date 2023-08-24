@@ -5,13 +5,13 @@
   (paper "A4")
 
   (title_block
-    (title "Sailor Hat with ESP32")
-    (date "2023-08-10")
-    (rev "2.0.3")
+    (title "Hat Labs Marine Engine/Tank interface (HALMET)")
+    (date "2023-09-19")
+    (rev "1.0.0-a1")
     (company "Hat Labs Ltd")
     (comment 1 "https://creativecommons.org/licenses/by-sa/4.0")
     (comment 2 "To view a copy of this license, visit ")
-    (comment 3 "SH-ESP32 is licensed under CC BY-SA 4.0.")
+    (comment 3 "HALMET is licensed under CC BY-SA 4.0.")
   )
 
   (lib_symbols
@@ -305,7 +305,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
@@ -339,7 +339,7 @@
       )
       (symbol "+3.3V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3V3" (effects (font (size 1.27 1.27))))
+          (name "+3.3V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -357,7 +357,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
@@ -389,9 +389,6 @@
   (junction (at 137.16 109.22) (diameter 0) (color 0 0 0 0)
     (uuid 17ed5bd0-2a2e-4d48-83f4-ab563068ea68)
   )
-  (junction (at 48.26 87.63) (diameter 0) (color 0 0 0 0)
-    (uuid 1cf2c099-eaec-4f6e-8e20-39154a54121d)
-  )
   (junction (at 63.5 90.17) (diameter 0) (color 0 0 0 0)
     (uuid 41748748-ea9b-4c67-99ca-5640bbef82a3)
   )
@@ -410,37 +407,20 @@
   (junction (at 85.09 85.09) (diameter 0) (color 0 0 0 0)
     (uuid be485cc9-e348-4a20-a373-c3b68029faea)
   )
-  (junction (at 50.8 85.09) (diameter 0) (color 0 0 0 0)
-    (uuid cb1b3a28-1a93-4ecf-8c57-883a700036bd)
-  )
   (junction (at 148.59 109.22) (diameter 0) (color 0 0 0 0)
     (uuid cb7cd691-89c3-42f8-908e-e945525dbc9a)
   )
   (junction (at 148.59 88.9) (diameter 0) (color 0 0 0 0)
     (uuid d36b5d69-e051-4ad3-9459-d144c0ecf55d)
   )
-  (junction (at 49.53 90.17) (diameter 0) (color 0 0 0 0)
-    (uuid eaff18ba-5d85-4f16-a783-c68ec9d3ec81)
-  )
-  (junction (at 52.07 82.55) (diameter 0) (color 0 0 0 0)
-    (uuid ee91212b-da05-416f-8195-3bcac4faeb4d)
-  )
 
-  (wire (pts (xy 52.07 66.04) (xy 52.07 82.55))
-    (stroke (width 0) (type default))
-    (uuid 00442289-ddb8-4f00-bea0-34b51393b737)
-  )
   (wire (pts (xy 85.09 85.09) (xy 90.17 85.09))
     (stroke (width 0) (type default))
     (uuid 0b4e945b-a9e8-4718-834f-e70b02477824)
   )
-  (wire (pts (xy 83.82 82.55) (xy 52.07 82.55))
+  (wire (pts (xy 46.99 82.55) (xy 83.82 82.55))
     (stroke (width 0) (type default))
     (uuid 11b966a8-0196-43de-9737-21c08a474645)
-  )
-  (wire (pts (xy 46.99 68.58) (xy 50.8 68.58))
-    (stroke (width 0) (type default))
-    (uuid 18289365-c1f0-4c9c-a7bf-d219fc3d827d)
   )
   (wire (pts (xy 133.35 68.58) (xy 137.16 68.58))
     (stroke (width 0) (type default))
@@ -462,10 +442,6 @@
     (stroke (width 0) (type default))
     (uuid 34e133bf-a8e4-429e-818d-ebbec6b465b5)
   )
-  (wire (pts (xy 50.8 85.09) (xy 46.99 85.09))
-    (stroke (width 0) (type default))
-    (uuid 35d1e2bb-9e1d-4019-b7c5-fda25794d166)
-  )
   (wire (pts (xy 74.93 57.15) (xy 80.01 57.15))
     (stroke (width 0) (type default))
     (uuid 36fd1d08-b9bd-4bc9-9e4e-2d25c03c60ce)
@@ -474,13 +450,9 @@
     (stroke (width 0) (type default))
     (uuid 38da9dea-36e9-4d2f-8181-f9bbb74e307f)
   )
-  (wire (pts (xy 48.26 87.63) (xy 71.12 87.63))
+  (wire (pts (xy 46.99 87.63) (xy 71.12 87.63))
     (stroke (width 0) (type default))
     (uuid 43f83e34-9c13-48d3-957b-244bc7fab3a9)
-  )
-  (wire (pts (xy 46.99 87.63) (xy 48.26 87.63))
-    (stroke (width 0) (type default))
-    (uuid 4992fb02-e11a-48f4-be1e-95c164226539)
   )
   (wire (pts (xy 63.5 90.17) (xy 90.17 90.17))
     (stroke (width 0) (type default))
@@ -489,10 +461,6 @@
   (wire (pts (xy 71.12 105.41) (xy 71.12 101.6))
     (stroke (width 0) (type default))
     (uuid 4f94287d-7389-44cb-92a6-55ff5bcd03df)
-  )
-  (wire (pts (xy 46.99 71.12) (xy 49.53 71.12))
-    (stroke (width 0) (type default))
-    (uuid 4fe621a6-21e0-48d8-bb2b-2190a075813c)
   )
   (wire (pts (xy 74.93 50.8) (xy 80.01 50.8))
     (stroke (width 0) (type default))
@@ -514,15 +482,11 @@
     (stroke (width 0) (type default))
     (uuid 61ea7daf-b2f9-4c78-976f-bdf878ac8cb7)
   )
-  (wire (pts (xy 48.26 73.66) (xy 48.26 87.63))
-    (stroke (width 0) (type default))
-    (uuid 776aee4c-8ff8-4a4a-b80c-8100be35a6be)
-  )
   (wire (pts (xy 133.35 88.9) (xy 137.16 88.9))
     (stroke (width 0) (type default))
     (uuid 82a7cb56-09e4-4ee4-b763-f58d5c8e31f1)
   )
-  (wire (pts (xy 50.8 85.09) (xy 85.09 85.09))
+  (wire (pts (xy 46.99 85.09) (xy 85.09 85.09))
     (stroke (width 0) (type default))
     (uuid 87e89f7a-1f32-4099-994c-f55819065adc)
   )
@@ -550,14 +514,6 @@
     (stroke (width 0) (type default))
     (uuid a5058069-1236-4eae-8c47-bb0e706b2d4e)
   )
-  (wire (pts (xy 46.99 73.66) (xy 48.26 73.66))
-    (stroke (width 0) (type default))
-    (uuid a7e094fd-9241-49e4-99bb-1d5d9af7024f)
-  )
-  (wire (pts (xy 46.99 90.17) (xy 49.53 90.17))
-    (stroke (width 0) (type default))
-    (uuid b3f3448d-bf2c-4f52-a5e6-188db77d7987)
-  )
   (wire (pts (xy 85.09 105.41) (xy 85.09 101.6))
     (stroke (width 0) (type default))
     (uuid b6c4135e-5f26-4c12-97e0-dbf015bfb576)
@@ -566,15 +522,7 @@
     (stroke (width 0) (type default))
     (uuid b813327f-8012-43f7-8e78-af8d712d9d8a)
   )
-  (wire (pts (xy 49.53 71.12) (xy 49.53 90.17))
-    (stroke (width 0) (type default))
-    (uuid be2206c9-6428-4a74-85cb-77056fa666e3)
-  )
-  (wire (pts (xy 50.8 68.58) (xy 50.8 85.09))
-    (stroke (width 0) (type default))
-    (uuid c0f82597-84cf-476a-a958-f1fd455852c1)
-  )
-  (wire (pts (xy 49.53 90.17) (xy 63.5 90.17))
+  (wire (pts (xy 46.99 90.17) (xy 63.5 90.17))
     (stroke (width 0) (type default))
     (uuid c17d50d3-9d52-4d9b-8436-de0470b641f7)
   )
@@ -582,17 +530,9 @@
     (stroke (width 0) (type default))
     (uuid c991c12f-906c-48ce-8863-b44f072e8d64)
   )
-  (wire (pts (xy 46.99 66.04) (xy 52.07 66.04))
-    (stroke (width 0) (type default))
-    (uuid d4a9ae5d-2c57-42f0-803c-abffb05cc621)
-  )
   (wire (pts (xy 146.05 88.9) (xy 148.59 88.9))
     (stroke (width 0) (type default))
     (uuid e091cd3c-fc47-4c41-8476-0ec47526e265)
-  )
-  (wire (pts (xy 52.07 82.55) (xy 46.99 82.55))
-    (stroke (width 0) (type default))
-    (uuid edac4fde-d561-4ee9-88ed-ac2ce109870b)
   )
   (wire (pts (xy 83.82 82.55) (xy 83.82 74.93))
     (stroke (width 0) (type default))
@@ -601,11 +541,6 @@
   (wire (pts (xy 92.71 57.15) (xy 87.63 57.15))
     (stroke (width 0) (type default))
     (uuid fabb2626-0634-4a70-9288-6a834bc6d91c)
-  )
-
-  (text "I2C (qwiic)" (at 39.37 81.28 0)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 89dca6bf-b270-49dc-9678-d267f4562306)
   )
 
   (label "SDA_CONN" (at 133.35 88.9 180) (fields_autoplaced)
@@ -650,25 +585,25 @@
     (uuid cee68776-3485-4621-b6be-14a194a7e834)
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 41.91 68.58 0) (mirror y) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 41.91 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f95eaac)
-    (property "Reference" "J702" (at 43.9928 60.5282 0)
+    (property "Reference" "J702" (at 43.9928 77.0382 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Conn_01x04" (at 43.9928 79.3496 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x04" (at 43.9928 62.8396 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" (at 41.91 68.58 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" (at 41.91 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 41.91 68.58 0)
+    (property "Datasheet" "~" (at 41.91 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C124413" (at 41.91 68.58 0)
+    (property "LCSC" "C124413" (at 41.91 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLCPCB_CORRECTION" "0;3.81;90" (at 41.91 68.58 0)
+    (property "JLCPCB_CORRECTION" "0;3.81;90" (at 41.91 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5e844299-5583-4726-abff-79fc5e2e1885))
@@ -676,43 +611,9 @@
     (pin "3" (uuid 89b6996e-0789-4d93-84ed-e1de109c4cd6))
     (pin "4" (uuid d025c3d3-371a-4e69-8eac-20420d5333f3))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "J702") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 41.91 85.09 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005f9c417f)
-    (property "Reference" "J701" (at 39.878 85.2932 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Conn_01x04" (at 39.878 87.6046 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" (at 41.91 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 41.91 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C145961" (at 41.91 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPCB_CORRECTION" "0;0;180" (at 41.91 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6f5da442-842c-4c76-8c33-a2a761fa8743))
-    (pin "2" (uuid 6c622f35-e1fe-41c7-a0f8-2dcd90453348))
-    (pin "3" (uuid b2085760-261d-480d-962a-eb2a47278fcb))
-    (pin "4" (uuid 63308fc5-3621-4303-a3e3-2656dc24abdf))
-    (instances
-      (project "SH-ESP32"
-        (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
-          (reference "J701") (unit 1)
         )
       )
     )
@@ -735,7 +636,7 @@
     )
     (pin "1" (uuid 463e8527-827c-4dc2-9113-6b5b43a332b0))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0712") (unit 1)
         )
@@ -767,7 +668,7 @@
     (pin "1" (uuid 93c82583-7ca4-47b9-81d3-24b1eb689576))
     (pin "2" (uuid 272b22b3-993f-4aea-8ccb-6c3766e10993))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "C706") (unit 1)
         )
@@ -792,7 +693,7 @@
     )
     (pin "1" (uuid 30140782-6a4f-4b06-ac4c-9f85a6545a6c))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0711") (unit 1)
         )
@@ -824,7 +725,7 @@
     (pin "1" (uuid fb39c9e1-02e7-4aa0-b465-b07b21359a18))
     (pin "2" (uuid 82365b79-0400-487d-ac55-ea260ac313a2))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "C705") (unit 1)
         )
@@ -849,7 +750,7 @@
     )
     (pin "1" (uuid e74d0f26-89cf-4fec-bc8c-0ecee93704d1))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0710") (unit 1)
         )
@@ -881,7 +782,7 @@
     (pin "1" (uuid 762f68fd-8f97-4ed4-b58c-65ed0e1fc5f4))
     (pin "2" (uuid 8eb5e39d-b5a0-4c21-86e2-1aedc614238a))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "C702") (unit 1)
         )
@@ -913,7 +814,7 @@
     (pin "1" (uuid a95ed89a-d1a3-4f97-ae33-cc87c37af41c))
     (pin "2" (uuid 8ae2c698-cadb-4ede-a11b-197bc23097af))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "C703") (unit 1)
         )
@@ -945,7 +846,7 @@
     (pin "1" (uuid 6a8cc4fd-ed17-44e5-bfb7-46917ca0d3a9))
     (pin "2" (uuid ba594d80-47f1-4fb9-b9d2-336f450a9db5))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "C704") (unit 1)
         )
@@ -970,7 +871,7 @@
     )
     (pin "1" (uuid 51f2a6ca-4cd3-4ce3-978a-4401f110cfa2))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0709") (unit 1)
         )
@@ -1002,7 +903,7 @@
     (pin "1" (uuid d49979b8-f8c0-4b71-b019-93209c4e779c))
     (pin "2" (uuid 8ab7d49f-70fc-4e87-aac5-cb6c5e6bb885))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "C701") (unit 1)
         )
@@ -1034,7 +935,7 @@
     (pin "1" (uuid daeb8d38-76f7-457a-8ebe-f8ef84d420fe))
     (pin "2" (uuid ea889ca5-2f6e-468c-838d-6a55c791a018))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "R701") (unit 1)
         )
@@ -1059,7 +960,7 @@
     )
     (pin "1" (uuid 2f73977b-8ddf-4038-9f9c-58deae86ddcf))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0704") (unit 1)
         )
@@ -1091,7 +992,7 @@
     (pin "1" (uuid 4304d68e-bdb6-4b70-94b2-279d4976a29d))
     (pin "2" (uuid 1e4ac8c8-ce6f-4526-9144-5c1619fd5c54))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "R702") (unit 1)
         )
@@ -1116,7 +1017,7 @@
     )
     (pin "1" (uuid 1af93a30-e96e-4701-9b61-9eb855ec2dee))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0705") (unit 1)
         )
@@ -1148,7 +1049,7 @@
     (pin "1" (uuid d8379761-9055-48bd-a006-b2425ef663dc))
     (pin "2" (uuid 138d9654-b202-4d9e-9009-a9a75ee7024f))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "FB701") (unit 1)
         )
@@ -1180,7 +1081,7 @@
     (pin "1" (uuid c5ef056d-274a-4928-9b9e-a913df1b4486))
     (pin "2" (uuid 56678a1d-a811-4336-9aa4-a2afb3dfddc1))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "FB703") (unit 1)
         )
@@ -1212,7 +1113,7 @@
     (pin "1" (uuid 79ee6d53-f14c-44cb-b418-1df9ee69b6d1))
     (pin "2" (uuid ce1649e5-ee7c-4cd0-b17d-68c5978d6aac))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "FB702") (unit 1)
         )
@@ -1237,7 +1138,7 @@
     )
     (pin "1" (uuid 38b6dd83-12d8-46e9-a67a-1c1e1a7386ce))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0708") (unit 1)
         )
@@ -1262,7 +1163,7 @@
     )
     (pin "1" (uuid 6615abd6-1793-4cc0-87f1-78313216f32f))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0707") (unit 1)
         )
@@ -1287,7 +1188,7 @@
     )
     (pin "1" (uuid acdbf5cf-8d8d-40aa-b821-08b2bb74b494))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0706") (unit 1)
         )
@@ -1312,7 +1213,7 @@
     )
     (pin "1" (uuid 00fd5ea9-9fc0-47d8-9fcc-042644adb7f8))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0701") (unit 1)
         )
@@ -1337,7 +1238,7 @@
     )
     (pin "1" (uuid f41c3050-2955-44f9-8f58-9dbf98b2b559))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0409") (unit 1)
         )
@@ -1369,7 +1270,7 @@
     (pin "1" (uuid 119f7e99-14ac-4b91-9ef2-b187f8e13d62))
     (pin "2" (uuid 21eb56d0-6820-46ff-9b1e-c7f7558ea1ad))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "D403") (unit 1)
         )
@@ -1394,7 +1295,7 @@
     )
     (pin "1" (uuid ee1a5136-24f7-4599-a5d5-5e344eb26ac7))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0403") (unit 1)
         )
@@ -1426,7 +1327,7 @@
     (pin "1" (uuid 75e740ce-7e3c-4924-ae9c-2a6c0a2485a9))
     (pin "2" (uuid 8fdd482d-a1ed-499e-8ce6-050c838620c2))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "D401") (unit 1)
         )
@@ -1451,7 +1352,7 @@
     )
     (pin "1" (uuid f9d71365-0751-4643-8035-176b07e6e4cc))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "#PWR0401") (unit 1)
         )
@@ -1483,7 +1384,7 @@
     (pin "1" (uuid 875a5426-63c2-4ca1-82f0-06d2219caf07))
     (pin "2" (uuid 6b3c04cb-bf4d-4100-ae12-4eed489eb333))
     (instances
-      (project "SH-ESP32"
+      (project "HALMET"
         (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005f9be197"
           (reference "D402") (unit 1)
         )
