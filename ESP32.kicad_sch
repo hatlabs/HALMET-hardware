@@ -1338,7 +1338,7 @@
     (property "Reference" "C203" (at 66.421 174.0916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1uf" (at 66.421 176.403 0)
+    (property "Value" "1uF" (at 66.421 176.403 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 64.4652 179.07 0)

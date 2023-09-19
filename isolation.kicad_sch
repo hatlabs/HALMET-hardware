@@ -2637,7 +2637,7 @@
     (property "Reference" "U1201" (at 101.6 93.98 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "pi140U30" (at 101.6 96.52 0)
+    (property "Value" "π140U30" (at 101.6 96.52 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_SO:SOIC-16_4.55x10.3mm_P1.27mm" (at 101.6 128.905 0)
