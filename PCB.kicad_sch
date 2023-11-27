@@ -5,9 +5,9 @@
   (paper "A4")
 
   (title_block
-    (title "Hat Labs Marine Engine/Tank interface (HALMET)")
-    (date "2023-09-19")
-    (rev "1.0.0-a1")
+    (title "Hat Labs Marine Engine & Tank interface (HALMET)")
+    (date "2023-11-27")
+    (rev "1.0.0")
     (company "Hat Labs Ltd")
     (comment 1 "https://creativecommons.org/licenses/by-sa/4.0")
     (comment 2 "To view a copy of this license, visit ")
@@ -265,7 +265,7 @@
   )
 
   (symbol (lib_id "Graphic:SYM_Radioactive_Radiation_Small") (at 160.02 55.88 0) (unit 1)
-    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 260ccba7-d7f7-489f-9b76-8f8af74177c1)
     (property "Reference" "G502" (at 163.83 54.2925 0)
       (effects (font (size 1.27 1.27)) (justify left))

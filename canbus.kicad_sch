@@ -5,9 +5,9 @@
   (paper "A4")
 
   (title_block
-    (title "Hat Labs Marine Engine/Tank interface (HALMET)")
-    (date "2023-09-19")
-    (rev "1.0.0-a1")
+    (title "Hat Labs Marine Engine & Tank interface (HALMET)")
+    (date "2023-11-27")
+    (rev "1.0.0")
     (company "Hat Labs Ltd")
     (comment 1 "https://creativecommons.org/licenses/by-sa/4.0")
     (comment 2 "To view a copy of this license, visit ")
