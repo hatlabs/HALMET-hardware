@@ -1219,7 +1219,7 @@
     )
   )
 
-  (hierarchical_label "DI3" (shape input) (at 86.36 88.9 0) (fields_autoplaced)
+  (hierarchical_label "DI3" (shape input) (at 86.36 91.44 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 0125dd0f-dee4-4dd7-ab11-8ea3184ba294)
   )
@@ -1251,7 +1251,7 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 8c306600-74f2-420d-afac-24f5da772bd0)
   )
-  (hierarchical_label "DI4" (shape input) (at 86.36 91.44 0) (fields_autoplaced)
+  (hierarchical_label "DI4" (shape input) (at 86.36 88.9 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 9dbeef32-e70e-45f2-a687-811c4945f897)
   )
