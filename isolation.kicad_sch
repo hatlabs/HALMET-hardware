@@ -2952,7 +2952,7 @@
     (property "Datasheet" "~" (at 101.6 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C1021634" (at 101.6 72.39 0)
+    (property "LCSC" "C2940747" (at 101.6 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4b65fdbe-11c9-4aa7-897e-f653bc60bd38))
