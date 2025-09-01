@@ -1,458 +1,912 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid dbbd160f-7240-4bed-bdc1-13963605680d)
-
-  (paper "A4")
-
-  (title_block
-    (title "Hat Labs Marine Engine & Tank interface (HALMET)")
-    (date "2024-01-18")
-    (rev "1.0.1")
-    (company "Hat Labs Ltd")
-    (comment 1 "https://creativecommons.org/licenses/by-sa/4.0")
-    (comment 2 "To view a copy of this license, visit ")
-    (comment 3 "HALMET is licensed under CC BY-SA 4.0.")
-  )
-
-  (lib_symbols
-    (symbol "Graphic:SYM_Radioactive_Radiation_Small" (in_bom no) (on_board no)
-      (property "Reference" "#SYM" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "SYM_Radioactive_Radiation_Small" (at 0 -3.175 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "" (at 0 -4.445 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0.762 -5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Sim.Enable" "0" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "symbol logo radioactive radiation warning" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Radioactive/radiation warning symbol, small" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SYM_Radioactive_Radiation_Small_0_0"
-        (arc (start -1.1176 -0.7366) (mid -0.8421 -1.2231) (end -0.3556 -1.4986)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start -0.6096 -0.6096) (mid -0.4656 -0.8429) (end -0.2286 -0.9906)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center -0.0254 -0.3556) (radius 0.3556)
-          (stroke (width 0.254) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy -1.1176 -0.7366)
-            (xy -0.6096 -0.6096)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.635 0.6096)
-            (xy -0.381 0.1016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.3556 -1.4986)
-            (xy -0.2286 -0.9906)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.3556 -1.4986)
-            (xy 0.2286 -0.9906)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.635 0.6096)
-            (xy 0.381 0.1016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.1176 -0.7366)
-            (xy 0.6096 -0.6096)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.6096 -0.6604)
-            (xy -0.508 -0.8636)
-            (xy -0.254 -0.9652)
-            (xy -0.4064 -1.4732)
-            (xy -0.762 -1.2192)
-            (xy -0.9652 -1.016)
-            (xy -1.0668 -0.7112)
-            (xy -0.6096 -0.6604)
-          )
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy 0.6096 -0.6096)
-            (xy 0.4572 -0.8636)
-            (xy 0.254 -1.016)
-            (xy 0.4064 -1.4732)
-            (xy 0.7112 -1.27)
-            (xy 0.9144 -1.0668)
-            (xy 1.0668 -0.762)
-            (xy 0.6096 -0.6604)
-          )
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy -0.3556 0.1524)
-            (xy -0.1016 0.254)
-            (xy 0.1524 0.254)
-            (xy 0.3556 0.1016)
-            (xy 0.6096 0.6096)
-            (xy 0.3556 0.7112)
-            (xy 0.1016 0.762)
-            (xy -0.1524 0.762)
-            (xy -0.4572 0.6604)
-            (xy -0.6096 0.6096)
-            (xy -0.4064 0.1524)
-          )
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (arc (start 0.2286 -0.9906) (mid 0.4619 -0.8466) (end 0.6096 -0.6096)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 0.3556 -1.4986) (mid 0.8421 -1.2231) (end 1.1176 -0.7366)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 0.381 0.1016) (mid 0 0.2594) (end -0.381 0.1016)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 0.635 0.6096) (mid 0 0.8131) (end -0.635 0.6096)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "SYM_Radioactive_Radiation_Small_0_1"
-        (polyline
-          (pts
-            (xy -2.54 -1.905)
-            (xy 2.54 -1.905)
-            (xy 0 2.54)
-            (xy -2.54 -1.905)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-    )
-    (symbol "Mechanical:MountingHole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MountingHole" (at 0 3.175 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "mounting hole" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mounting Hole without connection" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "MountingHole*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MountingHole_0_1"
-        (circle (center 0 0) (radius 1.27)
-          (stroke (width 1.27) (type default))
-          (fill (type none))
-        )
-      )
-    )
-  )
-
-
-  (text "Mounting holes" (at 40.64 40.64 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 4f622e72-af33-430d-ab90-6efa65396503)
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 48.26 46.99 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005fc0d03d)
-    (property "Reference" "H1001" (at 50.8 45.8216 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 50.8 48.133 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "HALMET:MountingSlot_3.2mm_M3_Unplated" (at 48.26 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 48.26 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPCB_CORRECTION" "" (at 48.26 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "HALMET"
-        (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
-          (reference "H1001") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 48.26 54.61 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005fc0d043)
-    (property "Reference" "H1002" (at 50.8 53.4416 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 50.8 55.753 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "HALMET:MountingSlot_3.2mm_M3_Unplated" (at 48.26 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 48.26 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPCB_CORRECTION" "" (at 48.26 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "HALMET"
-        (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
-          (reference "H1002") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Graphic:SYM_Radioactive_Radiation_Small") (at 160.02 55.88 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 260ccba7-d7f7-489f-9b76-8f8af74177c1)
-    (property "Reference" "G502" (at 163.83 54.2925 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "CE-logo" (at 163.83 56.8325 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Symbol:CE-Logo_11.2x8mm_SilkScreen" (at 160.02 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 160.782 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 160.02 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "HALMET"
-        (path "/c7e7067c-5f5e-48d8-ab59-df26f9b35863/00000000-0000-0000-0000-00005fc0c355"
-          (reference "G502") (unit 1)
-        )
-      )
-      (project "HALMET"
-        (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
-          (reference "G602") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Graphic:SYM_Radioactive_Radiation_Small") (at 160.02 46.99 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 29f0b25c-4d8a-477e-9c5e-aed72e88c7fe)
-    (property "Reference" "G501" (at 163.83 45.4025 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "CC-BY" (at 163.83 47.9425 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "HALMET:cc-by_5mm" (at 160.02 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 160.782 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 160.02 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "HALMET"
-        (path "/c7e7067c-5f5e-48d8-ab59-df26f9b35863/00000000-0000-0000-0000-00005fc0c355"
-          (reference "G501") (unit 1)
-        )
-      )
-      (project "HALMET"
-        (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
-          (reference "G601") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Graphic:SYM_Radioactive_Radiation_Small") (at 160.02 82.55 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 59f5b6b5-4ee9-4acc-a95d-33941a8de1b5)
-    (property "Reference" "G505" (at 163.83 80.9625 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "HL-Logo" (at 163.83 83.5025 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "HALMET:Hat_Labs_25.4mm" (at 160.02 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 160.782 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 160.02 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "HALMET"
-        (path "/c7e7067c-5f5e-48d8-ab59-df26f9b35863/00000000-0000-0000-0000-00005fc0c355"
-          (reference "G505") (unit 1)
-        )
-      )
-      (project "HALMET"
-        (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
-          (reference "G605") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Graphic:SYM_Radioactive_Radiation_Small") (at 160.02 64.77 0) (unit 1)
-    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
-    (uuid c095e0f2-a184-4e79-bff7-b6581defa4e2)
-    (property "Reference" "G503" (at 163.83 63.1825 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "WEEE-logo" (at 163.83 65.7225 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Symbol:WEEE-Logo_5.6x8mm_SilkScreen" (at 160.02 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 160.782 69.85 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 160.02 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "HALMET"
-        (path "/c7e7067c-5f5e-48d8-ab59-df26f9b35863/00000000-0000-0000-0000-00005fc0c355"
-          (reference "G503") (unit 1)
-        )
-      )
-      (project "HALMET"
-        (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
-          (reference "G603") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Graphic:SYM_Radioactive_Radiation_Small") (at 160.02 91.44 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ca46a044-4d34-4ee1-9515-6a0c5c6cee73)
-    (property "Reference" "G505" (at 163.83 89.8525 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "HL-Pictogram" (at 163.83 92.3925 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "HALMET:HaL_picto_8mm" (at 160.02 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 160.782 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 160.02 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "HALMET"
-        (path "/c7e7067c-5f5e-48d8-ab59-df26f9b35863/00000000-0000-0000-0000-00005fc0c355"
-          (reference "G505") (unit 1)
-        )
-      )
-      (project "HALMET"
-        (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
-          (reference "G701") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Graphic:SYM_Radioactive_Radiation_Small") (at 160.02 73.66 0) (unit 1)
-    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
-    (uuid d47d5192-98f1-4bf2-a4f4-272490ec8fd5)
-    (property "Reference" "G504" (at 163.83 72.0725 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "OSHW-logo" (at 163.83 74.6125 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Symbol:OSHW-Logo2_9.8x8mm_SilkScreen" (at 160.02 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 160.782 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 160.02 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "HALMET"
-        (path "/c7e7067c-5f5e-48d8-ab59-df26f9b35863/00000000-0000-0000-0000-00005fc0c355"
-          (reference "G504") (unit 1)
-        )
-      )
-      (project "HALMET"
-        (path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
-          (reference "G604") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "dbbd160f-7240-4bed-bdc1-13963605680d")
+	(paper "A4")
+	(title_block
+		(title "Hat Labs Marine Engine & Tank interface (HALMET)")
+		(date "2024-01-18")
+		(rev "1.0.1")
+		(company "Hat Labs Ltd")
+		(comment 1 "https://creativecommons.org/licenses/by-sa/4.0")
+		(comment 2 "To view a copy of this license, visit ")
+		(comment 3 "HALMET is licensed under CC BY-SA 4.0.")
+	)
+	(lib_symbols
+		(symbol "Graphic:SYM_Radioactive_Radiation_Small"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "#SYM"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "SYM_Radioactive_Radiation_Small"
+				(at 0 -3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0.762 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Radioactive/radiation warning symbol, small"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Enable" "0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "symbol logo radioactive radiation warning"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SYM_Radioactive_Radiation_Small_0_0"
+				(polyline
+					(pts
+						(xy -1.1176 -0.7366) (xy -0.6096 -0.6096)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0.6096) (xy -0.381 0.1016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.6096 -0.6604) (xy -0.508 -0.8636) (xy -0.254 -0.9652) (xy -0.4064 -1.4732) (xy -0.762 -1.2192)
+						(xy -0.9652 -1.016) (xy -1.0668 -0.7112) (xy -0.6096 -0.6604)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.1524) (xy -0.1016 0.254) (xy 0.1524 0.254) (xy 0.3556 0.1016) (xy 0.6096 0.6096)
+						(xy 0.3556 0.7112) (xy 0.1016 0.762) (xy -0.1524 0.762) (xy -0.4572 0.6604) (xy -0.6096 0.6096)
+						(xy -0.4064 0.1524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -1.4986) (xy -0.2286 -0.9906)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.3556 -1.4986)
+					(mid -0.8421 -1.2231)
+					(end -1.1176 -0.7366)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.2286 -0.9906)
+					(mid -0.4638 -0.8448)
+					(end -0.6096 -0.6096)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0254 -0.3556)
+					(radius 0.3556)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start -0.635 0.6096)
+					(mid 0 0.8131)
+					(end 0.635 0.6096)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.381 0.1016)
+					(mid 0 0.2594)
+					(end 0.381 0.1016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.6096 -0.6096)
+					(mid 0.4637 -0.8447)
+					(end 0.2286 -0.9906)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.1176 -0.7366)
+					(mid 0.8421 -1.2231)
+					(end 0.3556 -1.4986)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.3556 -1.4986) (xy 0.2286 -0.9906)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.6096 -0.6096) (xy 0.4572 -0.8636) (xy 0.254 -1.016) (xy 0.4064 -1.4732) (xy 0.7112 -1.27)
+						(xy 0.9144 -1.0668) (xy 1.0668 -0.762) (xy 0.6096 -0.6604)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.6096) (xy 0.381 0.1016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.1176 -0.7366) (xy 0.6096 -0.6096)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SYM_Radioactive_Radiation_Small_0_1"
+				(polyline
+					(pts
+						(xy -2.54 -1.905) (xy 2.54 -1.905) (xy 0 2.54) (xy -2.54 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "Mounting holes"
+		(exclude_from_sim no)
+		(at 40.64 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f622e72-af33-430d-ab90-6efa65396503")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 48.26 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fc0d03d")
+		(property "Reference" "H1001"
+			(at 50.8 45.8216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 50.8 48.133 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "HALMET:MountingSlot_3.2mm_M3_Unplated"
+			(at 48.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB_CORRECTION" ""
+			(at 48.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "HALMET"
+				(path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
+					(reference "H1001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 48.26 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fc0d043")
+		(property "Reference" "H1002"
+			(at 50.8 53.4416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 50.8 55.753 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "HALMET:MountingSlot_3.2mm_M3_Unplated"
+			(at 48.26 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB_CORRECTION" ""
+			(at 48.26 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "HALMET"
+				(path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
+					(reference "H1002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Radioactive_Radiation_Small")
+		(at 160.02 55.88 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "260ccba7-d7f7-489f-9b76-8f8af74177c1")
+		(property "Reference" "G602"
+			(at 163.83 54.2925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CE-logo"
+			(at 163.83 56.8325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Symbol:CE-Logo_11.2x8mm_SilkScreen"
+			(at 160.02 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.782 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "HALMET"
+				(path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
+					(reference "G602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Radioactive_Radiation_Small")
+		(at 160.02 46.99 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29f0b25c-4d8a-477e-9c5e-aed72e88c7fe")
+		(property "Reference" "G601"
+			(at 163.83 45.4025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CC-BY"
+			(at 163.83 47.9425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "HALMET:cc-by_5mm"
+			(at 160.02 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.782 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "HALMET"
+				(path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
+					(reference "G601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Radioactive_Radiation_Small")
+		(at 160.02 82.55 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59f5b6b5-4ee9-4acc-a95d-33941a8de1b5")
+		(property "Reference" "G605"
+			(at 163.83 80.9625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HL-Logo"
+			(at 163.83 83.5025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "HALMET:Hat_Labs_25.4mm"
+			(at 160.02 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.782 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "HALMET"
+				(path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
+					(reference "G605")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Radioactive_Radiation_Small")
+		(at 160.02 64.77 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c095e0f2-a184-4e79-bff7-b6581defa4e2")
+		(property "Reference" "G603"
+			(at 163.83 63.1825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "WEEE-logo"
+			(at 163.83 65.7225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Symbol:WEEE-Logo_5.6x8mm_SilkScreen"
+			(at 160.02 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.782 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "HALMET"
+				(path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
+					(reference "G603")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Radioactive_Radiation_Small")
+		(at 160.02 91.44 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca46a044-4d34-4ee1-9515-6a0c5c6cee73")
+		(property "Reference" "G701"
+			(at 163.83 89.8525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HL-Pictogram"
+			(at 163.83 92.3925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "HALMET:HaL_picto_8mm"
+			(at 160.02 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.782 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "HALMET"
+				(path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
+					(reference "G701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Radioactive_Radiation_Small")
+		(at 160.02 73.66 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d47d5192-98f1-4bf2-a4f4-272490ec8fd5")
+		(property "Reference" "G604"
+			(at 163.83 72.0725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OSHW-logo"
+			(at 163.83 74.6125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Symbol:OSHW-Logo2_9.8x8mm_SilkScreen"
+			(at 160.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.782 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "HALMET"
+				(path "/dff502f1-2fe5-4c09-a767-aabc78c2e052/00000000-0000-0000-0000-00005fc0c355"
+					(reference "G604")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
